@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Reservation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><h1>Create a Reservation</h1></header>
+    <form name="valid">
+        <fieldset><legend>Log In</legend>
+
+        Email: <br>
+        <input type="text" name="email" required><br><br>
+
+        Password: <br>
+        <input type="text" name="password" required><br><br></fieldset>
+      </form> <br><br>
+
+    <form name="reservation" action="/reservations.html" method="get">
+        <fieldset><legend>Reservation Information</legend>
+        Reservation Date: <br>
+        <input type="text" name="date" required><br><br>
+
+        Reservation Time: <br>
+        <input type="text" name="time" required><br><br>
+
+        Building: <br>
+        <select name="building" required>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="E">E</option>
+            <option value="F">F</option>
+            <option value="G">G</option>
+            <option value="H">H</option>
+            <option value="I">I</option>
+        </select><br><br>
+
+        Room Number: <br>
+        <input type="text" name="room_num" required><br><br>
+
+        <input type="submit" value="Submit"></fieldset>
+      </form>
+</body>
+<footer>
+    <p class="footer"><br>
+        WHU Room Reservation Spring 2022 &copy;
+    </p>
+</footer>
+</html>
